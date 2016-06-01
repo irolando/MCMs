@@ -12,6 +12,8 @@
 
 @interface CreatureViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
+@property BOOL buttonToggled;
+@property (weak, nonatomic) IBOutlet UITextField *editTextField;
 
 
 @end
@@ -20,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.editTextField setHidden:YES];
     // Do any additional setup after loading the view.
 }
 
@@ -28,17 +31,31 @@
 }
 
 - (IBAction)onEditButtonPressed:(id)sender {
+
+    if (self.buttonToggled) {
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
+        self.buttonToggled = FALSE;
+        [self.editTextField setHidden:NO];
+    }
+    else {
+        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        self.buttonToggled = TRUE;
+        [self.editTextField setHidden:YES];
+
+    }
     
-    {
-        
-    if([self.editButton.titleLabel.text isEqualToString:@"Edit"]) {
-        
-        self.editButton.titleLabel.text = @"Done";
-    }
-    else{
-        self.editButton.titleLabel.text = @"Edit";
-    }
-}
+    
+    
+//    {
+//    
+//    if([self.editButton.titleLabel.text isEqualToString:@"Edit"]) {
+//        
+//        self.editButton.titleLabel.text = @"Done";
+//    }
+//    else{
+//        self.editButton.titleLabel.text = @"Edit";
+//    }
+//}
 }
 
 
