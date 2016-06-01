@@ -13,6 +13,7 @@
 		2CC048041CFF6BFB009A0E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC048021CFF6BFB009A0E56 /* Main.storyboard */; };
 		2CC048061CFF6BFB009A0E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC048051CFF6BFB009A0E56 /* Assets.xcassets */; };
 		2CC048091CFF6BFB009A0E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC048071CFF6BFB009A0E56 /* LaunchScreen.storyboard */; };
+		2CC048121CFF6C2E009A0E56 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC048111CFF6C2E009A0E56 /* MagicalCreature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2CC048051CFF6BFB009A0E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC048081CFF6BFB009A0E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC0480A1CFF6BFB009A0E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC048101CFF6C2E009A0E56 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
+		2CC048111CFF6C2E009A0E56 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		2CC047ED1CFF6BFB009A0E56 = {
 			isa = PBXGroup;
 			children = (
+				2CC048101CFF6C2E009A0E56 /* MagicalCreature.h */,
+				2CC048111CFF6C2E009A0E56 /* MagicalCreature.m */,
 				2CC047F81CFF6BFB009A0E56 /* MCMs */,
 				2CC047F71CFF6BFB009A0E56 /* Products */,
 			);
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC048011CFF6BFB009A0E56 /* ViewController.m in Sources */,
+				2CC048121CFF6C2E009A0E56 /* MagicalCreature.m in Sources */,
 				2CC047FE1CFF6BFB009A0E56 /* AppDelegate.m in Sources */,
 				2CC047FB1CFF6BFB009A0E56 /* main.m in Sources */,
 			);

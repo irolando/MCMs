@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "MagicalCreature.h"
 
 @interface ViewController ()
+@property NSMutableArray *creatures;
 
 @end
 
@@ -16,12 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.creatures *creature1 = [[NSMutableArray alloc]init];
+    
+    self.creatures = [NSArray arrayWithObjects:creature1, nil];
 }
 
 @end
