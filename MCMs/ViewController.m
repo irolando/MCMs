@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "MagicalCreature.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property NSMutableArray *creatures;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -19,9 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.creatures *creature1 = [[NSMutableArray alloc]init];
+    self.creatures = [[NSMutableArray alloc]init];
     
-    self.creatures = [NSArray arrayWithObjects:creature1, nil];
+    self.creatures = [NSMutableArray arrayWithObjects:@"Pikachu", @"Bulbasuar", @"Scyther", nil];
+    NSLog(@"%@", [self.creatures objectAtIndex:0]);
+    
 }
 
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CellID"];
+    cell.textLabel.text = [self.creatures objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.creatures.count;
+}
 @end
