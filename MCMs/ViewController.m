@@ -54,10 +54,21 @@
     }
 }
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     CreatureViewController *cvc = segue.destinationViewController;
     cvc.title = self.creatures[indexPath.row];
 }
+// following commented out code switches edit to done and allows for delete
+//- (IBAction)onEditButtonPressed:(id)sender {
+//        if ([[sender currentTitle] isEqualToString:@"Edit"]) {
+//            [self.tableView setEditing:YES animated:YES];
+//            [sender setTitle:@"Done" forState:UIControlStateNormal];
+//        } else if ([[sender currentTitle] isEqualToString:@"Done"]) {
+//            [self.tableView setEditing:NO animated:YES];
+//            [sender setTitle:@"Edit" forState:UIControlStateNormal];
+//        }
+//}
 
 @end

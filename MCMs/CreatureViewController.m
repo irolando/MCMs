@@ -7,9 +7,12 @@
 //
 
 #import "CreatureViewController.h"
+#import "ViewController.h"
+
 
 @interface CreatureViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
+
 
 @end
 
@@ -26,13 +29,20 @@
 
 - (IBAction)onEditButtonPressed:(id)sender {
     
-    if ([[sender currentTitle] isEqualToString:@"edit"]) {
-        [sender setTitle:@"done"];
-    } else if([[sender currentTitle]isEqualToString:@"done"]){
-        [sender setTitle:@"edit"];
+    {
+        
+    if([self.editButton.titleLabel.text isEqualToString:@"Edit"]) {
+        
+        self.editButton.titleLabel.text = @"Done";
     }
-    
+    else{
+        self.editButton.titleLabel.text = @"Edit";
+    }
 }
+}
+
+
+
 
 
 
