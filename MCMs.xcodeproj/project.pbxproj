@@ -14,6 +14,7 @@
 		2CC048061CFF6BFB009A0E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC048051CFF6BFB009A0E56 /* Assets.xcassets */; };
 		2CC048091CFF6BFB009A0E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC048071CFF6BFB009A0E56 /* LaunchScreen.storyboard */; };
 		2CC048121CFF6C2E009A0E56 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC048111CFF6C2E009A0E56 /* MagicalCreature.m */; };
+		2CC048151CFF7D0E009A0E56 /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC048141CFF7D0E009A0E56 /* CreatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		2CC0480A1CFF6BFB009A0E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC048101CFF6C2E009A0E56 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
 		2CC048111CFF6C2E009A0E56 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
+		2CC048131CFF7D0E009A0E56 /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureViewController.h; sourceTree = "<group>"; };
+		2CC048141CFF7D0E009A0E56 /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				2CC047FF1CFF6BFB009A0E56 /* ViewController.h */,
 				2CC048001CFF6BFB009A0E56 /* ViewController.m */,
 				2CC048021CFF6BFB009A0E56 /* Main.storyboard */,
+				2CC048131CFF7D0E009A0E56 /* CreatureViewController.h */,
+				2CC048141CFF7D0E009A0E56 /* CreatureViewController.m */,
 				2CC048051CFF6BFB009A0E56 /* Assets.xcassets */,
 				2CC048071CFF6BFB009A0E56 /* LaunchScreen.storyboard */,
 				2CC0480A1CFF6BFB009A0E56 /* Info.plist */,
@@ -157,6 +162,7 @@
 				2CC048011CFF6BFB009A0E56 /* ViewController.m in Sources */,
 				2CC048121CFF6C2E009A0E56 /* MagicalCreature.m in Sources */,
 				2CC047FE1CFF6BFB009A0E56 /* AppDelegate.m in Sources */,
+				2CC048151CFF7D0E009A0E56 /* CreatureViewController.m in Sources */,
 				2CC047FB1CFF6BFB009A0E56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				2CC0480F1CFF6BFB009A0E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

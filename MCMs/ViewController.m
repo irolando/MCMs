@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "MagicalCreature.h"
+#import "CreatureViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property NSMutableArray *creatures;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextField *monsterTextField;
 
 @end
 
@@ -39,4 +41,23 @@
     
     return self.creatures.count;
 }
+- (IBAction)addButtonPressed:(id)sender {
+    
+    if ([self.monsterTextField.text isEqualToString:@""]) {
+        
+    } else {
+        [self.creatures addObject:self.monsterTextField.text];
+        [self.tableView reloadData];
+        //the following code hides the keyboard
+        [self.monsterTextField resignFirstResponder];
+        self.monsterTextField.text = nil;
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    CreatureViewController *cvc = segue.destinationViewController;
+    cvc.title = self.creatures[indexPath.row];
+}
+
 @end
